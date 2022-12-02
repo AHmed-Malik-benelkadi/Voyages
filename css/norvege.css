@@ -228,5 +228,25 @@ main{
     MARGIN-TOP: 20px;
     margin-left: 500PX;
 }
-
+.videoytb
+{ display: block;
+    width: 39%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+a:link {
+    color: #ccc;
+}
+/* lien visité */
+a:visited {
+    color: #095484;
+}
+/* souris sur le lien */
+a:hover {
+    color: hotpink;
+}
+/* lien sélécté */
+a:active {
+    color: #800000;
+}
 
