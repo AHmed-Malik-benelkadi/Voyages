@@ -240,4 +240,11 @@ footer{
     font-family: 'Fragmentcore';
 }
 
-
+audio
+{
+    display: block;
+    width: 39%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+}
