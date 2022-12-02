@@ -12,6 +12,10 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+
+/* CSS Pour le menu --
+---
+ */
 #menu, #menu ul {
     padding:0;
     margin:0;
@@ -114,6 +118,9 @@ header{
     border-bottom-right-radius: 10px;
 }
 
+/* Fin  CSS Pour le menu --
+---
+ */
 
 h1 {
     text-align: center;
@@ -123,6 +130,25 @@ h1 {
 h2
 {
   margin-left: 20px;
+}
+/* css sur le main
+-------------------
+
+ */
+
+main{
+    background-color: auto;
+    background: linear-gradient(indianred, pink);
+
+}
+.THEFLAG
+{
+    display: block;
+    width: 23%;
+    margin: auto;
+    margin-bottom: none;
+    MARGIN-TOP: 20px;
+    margin-left: 500PX;
 }
 .cont
 {
@@ -150,61 +176,15 @@ p
     display:flex;
 
   }
-footer{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       background-color: rgba(0, 0, 0, 0.5);
-       width: 100%;
-       color: antiquewhite;
-   }
-.copyright{
-    padding-left:20px;
-}
-.copyright p{
-    font-family: 'Fragmentcore';
-}
-.topbutton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-.topbutton:hover{
-    opacity: 0.3;
-}
-.topbutton img{
-    height: 40px;
-    width: 40px;
-}
-.topbutton a:link{
-    font-family: 'TravelingTypewriter';
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-}
-.topbutton a:visited{
-    font-family: 'TravelingTypewriter';
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-}
-.topbutton a:active{
-    font-family: 'TravelingTypewriter';
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-}
+
+/*  FIN css sur le main
+-------------------
+
+ */
 .img {
     padding: 10px;
 }
-main{
-  background-color: auto;
-    background: linear-gradient(indianred, pink);
 
-}
 .imagedenorvege
 {
 
@@ -219,15 +199,7 @@ main{
     width: 39%;
     margin: auto;
 }
-.THEFLAG
-{
-    display: block;
-    width: 23%;
-    margin: auto;
-    margin-bottom: none;
-    MARGIN-TOP: 20px;
-    margin-left: 500PX;
-}
+
 .videoytb
 { display: block;
     width: 39%;
@@ -248,6 +220,24 @@ a:hover {
 /* lien sélécté */
 a:active {
     color: #800000;
+}
+
+/* Partie du pied de page
+-------------------------
+ */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: antiquewhite;
+}
+.copyright{
+    padding-left:20px;
+}
+.copyright p{
+    font-family: 'Fragmentcore';
 }
 
 
