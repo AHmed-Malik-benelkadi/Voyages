@@ -134,7 +134,7 @@ html,body {
     cursor: context-menu;
 }
 #grece {
-    background-image: url("img/grece-background.jpg");
+    background-image: url("../images/img-grèce/grece-background.jpg");
     background-attachment: fixed;
     background-position: bottom center;
     background-size: cover;
@@ -283,14 +283,15 @@ html,body {
 article {
     width: 80%;
 }
-.flex {
-    display: flex;
-    /*flex-wrap: wrap;*/
-    align-items: center;
+.flex{
+  display: flex;
+  
 }
 .flex p {
-    padding-left: 1em;
+  margin: 1%;
 }
+
+
 b {
     color: #ff913d;
 }
@@ -393,7 +394,7 @@ b {
     border-radius: 15px;
 }
 footer {
-    position: relative; /*l'animation pase derrière*/
+    position: relative;
 }
 
 
