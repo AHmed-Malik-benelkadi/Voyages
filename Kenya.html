@@ -8,8 +8,6 @@
       <link rel="stylesheet" href="css/voyage1.css">
       <link href = "https://fonts.googleapis.com/css2? family = Roboto & display = swap" rel = "feuille de style ">
 
-      <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-      <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 
    </head>
    <body>
@@ -123,81 +121,14 @@
          </div>
 
 <!-- la carte -->
-            <div id='map' style='width: 1000px; height: 500px;'></div>
+<div class="titrecarte">
+<h1>les Cartes</h1>
+</div>
+      <div class="carte">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1669979961197!6m8!1m7!1sCAoSLEFGMVFpcE9UMXFqTUUxRjQ1SlowNmlSbEh4dmo3ZHB6VGFmSGZPVzY1bGhy!2m2!1d-5.5352409!2d38.9692737!3f159.72344223118648!4f8.348784409812836!5f0.7820865974627469" width="1000" height="500" style="border:4;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <script>
-               mapboxgl.accessToken = 'pk.eyJ1IjoiZGphbWVsZWRkaW5lIiwiYSI6ImNsYjNmaGlsZTA2d2UzcHQ3cXk0aXdzYnAifQ.P6-y4XdYCjL1fawPon197g';
-            const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/satellite-v9',
-            projection: 'globe', 
-            zoom: 1.5,
-            center: [-90, 40]
-            });
-             
-            map.on('style.load', () => {
-            map.setFog({}); 
-            });
-         
-            const secondsPerRevolution = 120;
-            const maxSpinZoom = 5;
-            const slowSpinZoom = 3;
-             
-            let userInteracting = false;
-            let spinEnabled = true;
-             
-            function spinGlobe() {
-            const zoom = map.getZoom();
-            if (spinEnabled && !userInteracting && zoom < maxSpinZoom) {
-            let distancePerSecond = 360 / secondsPerRevolution;
-            if (zoom > slowSpinZoom) {
-            const zoomDif =
-            (maxSpinZoom - zoom) / (maxSpinZoom - slowSpinZoom);
-            distancePerSecond *= zoomDif;
-            }
-            const center = map.getCenter();
-            center.lng -= distancePerSecond;
-            map.easeTo({ center, duration: 1000, easing: (n) => n });
-            }
-            }
-             
-            map.on('mousedown', () => {
-            userInteracting = true;
-            });
-             
-            map.on('mouseup', () => {
-            userInteracting = false;
-            spinGlobe();
-            });
-            map.on('dragend', () => {
-            userInteracting = false;
-            spinGlobe();
-            });
-            map.on('pitchend', () => {
-            userInteracting = false;
-            spinGlobe();
-            });
-            map.on('rotateend', () => {
-            userInteracting = false;
-            spinGlobe();
-            });
-            map.on('moveend', () => {
-            spinGlobe();
-            });
-            document.getElementById('btn-spin').addEventListener('click', (e) => {
-            spinEnabled = !spinEnabled;
-            if (spinEnabled) {
-            spinGlobe();
-            e.target.innerHTML = 'Pause rotation';
-            } else {
-            map.stop(); 
-            e.target.innerHTML = 'Start rotation';
-            }
-            }); 
-            spinGlobe();
-            </script>
-
-<!-- la carte -->
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1669979732417!6m8!1m7!1sCAoSLEFGMVFpcE5EYjZJUDVXaEl2S2puaUE3OTRBNTJFbXJ3Q2Z6elpubTJyWTBF!2m2!1d-2.3822217!2d40.6886117!3f113.95538272715649!4f-35.75800348711952!5f0.7820865974627469" width="1000" height="500" style="border:4;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>       
 <!--table-->
 
 <table>
@@ -300,6 +231,8 @@
                   <a href="https://www.pinterest.fr/search/pins/?q=kenya&rs=typed">Pinterest</a>
                </div>
             </section>
+
+
 
       </main>
       

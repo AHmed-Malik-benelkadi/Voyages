@@ -210,3 +210,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(255,36,0,1) 50%, rgba
 	opacity: 0;
 	animation: apparition 2s ease-in-out 0s forwards;
   }
+
+  .carte{
+	display: flex;
+	padding: 1%;
+	margin: 1;
+  }
+
+  .titrecarte{
+	text-align: center;
+  }
