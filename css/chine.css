@@ -1,3 +1,51 @@
+
+@media screen and (max-width:500px){
+  header #menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header #menu li {
+    display: block;
+  }
+  
+  header #menu ul {
+    position: static;
+  }
+  .form{
+    margin: 0;
+  }
+  #menu .menu-1 {
+    margin-top: 0;
+    margin-right: 0;
+    }
+
+    #menu .menu-2 {
+      margin-top:  0;
+      margin-left: 0;
+      }
+      main .left{
+        width: 100%;
+        margin-left: 0;
+      }
+      main div img {
+        width: 100%;
+      }
+      .capture {
+        width: 100%;
+      }
+      .ca { 
+        margin-top: 250px;
+      }
+      .main .division1 .division2{
+        font-size: 30px;
+      }
+      .grides {
+      display: block!important;
+      }
+      
+
+}
 .debut{
    background-image: url("img/background.jpg");
    background-attachment: fixed;

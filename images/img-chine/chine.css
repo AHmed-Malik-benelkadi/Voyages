@@ -1,3 +1,24 @@
+@media screen and (max-width:500px)
+{
+.slider .slider-viewport  {
+width: 492px;
+  }
+  .slider-nav{
+    margin-left: -140px;
+  }
+  main .arriereplan section {
+    width: 100%;
+    margin-top:200px;
+  }
+  .parent{
+    justify-content: end;
+  }
+  main .sauttigre{
+    margin-left: 80px;
+  }
+}
+
+
 .debut{
    background-image: url("background.jpg");
    background-attachment: fixed;
@@ -58,7 +79,7 @@
         height: 50%;
         object-fit: cover;
         display: block;
-    }
+    }img
     
     .gallery img:hover {
         transform: scale(1.2);
